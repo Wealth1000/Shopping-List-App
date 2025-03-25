@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/widgets/grocery_list.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           surface: const Color.fromARGB(255, 42, 51, 59),
         ),
       ),
-      home: const Placeholder(),
+      home: const GroceryList(),
     );
   }
 }
