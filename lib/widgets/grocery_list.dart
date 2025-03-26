@@ -121,7 +121,7 @@ class _GroceryListState extends State<GroceryList> {
         itemCount: _groceryItems.length,
         itemBuilder: (context, index) {
           return Dismissible(
-            key: Key(_groceryItems[index].id),
+            key: ValueKey(_groceryItems[index].id), // Changed from Key to ValueKey
             onDismissed: (direction) {
               _deleteItem(_groceryItems[index]);
             },
